@@ -21,7 +21,7 @@ RSpec.describe Product, type: :model do
     it 'fails without a price' do
       category = Category.create!(name: 'Apparel')
       product = Product.new(
-              name: 'shirt',
+              name: 'tee',
               price: nil,
               quantity: 2,
               category: category
@@ -32,8 +32,8 @@ RSpec.describe Product, type: :model do
     it 'fails without a quantity' do
       category = Category.create!(name: 'Apparel')
       product = Product.new(
-              name: 'shirt',
-              price: 254,
+              name: 'tee',
+              price: 12,
               quantity: nil,
               category: category
               )
@@ -43,8 +43,8 @@ RSpec.describe Product, type: :model do
     it 'fails without a price' do
       category = Category.create!(name: 'Apparel')
       product = Product.new(
-              name: 'shirt',
-              price: 254,
+              name: 'tee',
+              price: 12,
               quantity: 2,
               category: nil
               )
